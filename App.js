@@ -46,7 +46,9 @@ export default class App extends Component {
       if (accel.y > 0.8) {
         if (!done) {
           const diff = accel.y - this.state.accel.y
-          score = Math.min(Math.max(Math.round(diff * 10), 0), 10)
+          if (score !== '') {
+            score = Math.min(Math.max(Math.round(diff * 10), 0), 10)
+          }
           done = true
           if (this.state.sound) {
             cheer
