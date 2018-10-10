@@ -1,11 +1,14 @@
 {
   "expo": {
     "name": "ten",
-    "description": "For when you need to rate your friends' actions out of ten",
-    "slug": "ten",
+    "description": "Judge's score card when you need to rate your friends' actions out of ten, depending on how hard you flip your phone",
+    "slug": "judgefriendten",
     "privacy": "unlisted",
     "sdkVersion": "30.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,9 +20,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "githubUrl": "https://github.com/Nateeo/rate10"
   }
 }
