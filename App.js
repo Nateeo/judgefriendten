@@ -22,7 +22,7 @@ export default class App extends Component {
     accel: {},
     done: false,
     sound: true,
-    score: '',
+    score: 0,
   }
 
   componentDidMount = () => {
@@ -46,9 +46,7 @@ export default class App extends Component {
       if (accel.y > 0.8) {
         if (!done) {
           const diff = accel.y - this.state.accel.y
-          if (score !== '') {
-            score = Math.min(Math.max(Math.round(diff * 10), 0), 10)
-          }
+          score = Math.min(Math.max(Math.round(diff * 10), 0), 10)
           done = true
           if (this.state.sound) {
             cheer
